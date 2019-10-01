@@ -1,0 +1,9 @@
+body {
+    background: black;
+    background-image: url("https://talentgroup.fr/images/fond_ecran.jpg?crc=365795776");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    text-align: center;
+    padding-top: 15%;
+}

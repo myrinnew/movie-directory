@@ -3,6 +3,7 @@ const app = express();
 const request = require("request");
 
 app.set("view engine", "ejs");
+app.use(express.static("public"));
 
 app.get("/", (req, res) => {
     res.render("search");
@@ -20,6 +21,12 @@ app.get("/results", (req, res) => {
     });
 });
 
+// Localhost
+// app.listen(3000, "localhost", () => {
+//     console.log("Server has started...");
+// });
+
+// Production
 app.listen(process.env.PORT, process.env.IP, () => {
     console.log("Movie App has started");
 });
